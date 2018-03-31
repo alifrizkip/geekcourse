@@ -1,10 +1,13 @@
 @extends('layouts.app')
-@section('title') Geekcourse Video Tutorial - Courses List @endsection
+@section('title') Geekcourse Video Tutorial - All Courses List @endsection
 
 @section('content')
   <div class="container marketing">
       <div class="row">
-          @include('courses._list_courses')
+        <div class="col-lg-12 mb-4 mt-5">
+            <h2>All Courses</h2>
+        </div>
+          @include('_partials.list_courses')
       </div>
       <hr class="featurette-divider">
   </div>

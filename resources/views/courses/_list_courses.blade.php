@@ -16,12 +16,12 @@
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
-                          </select>
+                        </select>
                         <p class="card-text">Course detail - Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <div class="pull-right">
                           <strong>$ 9.99</strong>
                         </div>
-                        <a href="#" class="btn btn-primary">Detail</a>
+                    <a href="{{ route('courses.show', 1) }}" class="btn btn-primary">Detail</a>
                     </div>
                 </div>
             </div>

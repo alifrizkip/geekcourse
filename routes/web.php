@@ -13,3 +13,10 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::resource('courses', 'CourseController')->only('index', 'show');
+
+Route::get('/login', function() {
+  return view('auth.login');
+})->name('login');
+Route::get('/register', function() {
+  return view('auth.register');
+})->name('register');

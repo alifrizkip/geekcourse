@@ -7,7 +7,13 @@
         <div class="col-lg-12 mb-4 mt-5">
             <h2>All Courses</h2>
         </div>
-          @include('_partials.list_courses')
+            <div class="col-lg-12" style="padding: 0 7px;">
+                <div class="row mb-3">
+                    @foreach(range(1,20) as $item)
+                        @include('courses._card')
+                    @endforeach
+                </div>
+            </div>
       </div>
       <hr class="featurette-divider">
   </div>

@@ -1,5 +1,5 @@
 <div class="col-lg-12" style="padding: 0 7px;">
-    @foreach(range(1,3) as $item)
+    @foreach(range(1,1) as $item)
       <div class="row mb-3">
           @foreach(range(1,4) as $item)
               <div class="col-lg-3">

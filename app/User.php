@@ -28,14 +28,14 @@ class User extends Authenticatable
     ];
 
     public function courses() {
-        return $this->hasMany('App\Course');
+        return $this->hasMany(Course::class);
     }
 
     public function wishlists() {
-        return $this->belongsToMany('App\Course', 'wishlists', 'user_id', 'course_id');
+        return $this->belongsToMany(Course::class, 'wishlists', 'user_id', 'course_id');
     }
 
     public function enrolledCourses() {
-        return $this->belongsToMany('App\Course', 'course_user', 'user_id', 'course_id');
+        return $this->belongsToMany(Course::class, 'course_user', 'user_id', 'course_id');
     }
 }

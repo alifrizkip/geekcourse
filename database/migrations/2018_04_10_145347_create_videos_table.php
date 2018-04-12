@@ -20,6 +20,8 @@ class CreateVideosTable extends Migration
             $table->unsignedTinyInteger('order');
             $table->string('path');
             $table->timestamps();
+
+            $table->foreign('course_id')->references('id')->on('courses');
         });
     }
 

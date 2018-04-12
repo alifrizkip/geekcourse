@@ -19,6 +19,9 @@ class CreateCourseUserTable extends Migration
             $table->unsignedInteger('user_id');
             $table->decimal('price');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('course_id')->references('id')->on('courses');
         });
     }
 
